@@ -1,0 +1,14 @@
+//
+//  NetworkModel.swift
+//  BardMessenger
+//
+//  Created by Rizwan on 5/27/23.
+//
+
+import Foundation
+
+
+protocol NetResponse: Codable {
+    var statusCode: Int? { get }
+    var message: String? { get }
+}

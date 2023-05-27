@@ -11,7 +11,7 @@ import SwiftUI
 struct BardMessengerApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnBoarding()
         }
     }
 }

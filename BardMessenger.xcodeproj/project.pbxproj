@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,14 +11,32 @@
 		65B4979B2A2104FE00E40227 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B4979A2A2104FE00E40227 /* ContentView.swift */; };
 		65B4979D2A21050100E40227 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B4979C2A21050100E40227 /* Assets.xcassets */; };
 		65B497A02A21050100E40227 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B4979F2A21050100E40227 /* Preview Assets.xcassets */; };
+		65CA46682A22141A00323B83 /* ChatMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA46672A22141A00323B83 /* ChatMain.swift */; };
+		65CA466A2A22159D00323B83 /* ChatMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA46692A22159D00323B83 /* ChatMainViewModel.swift */; };
+		65F51E1C2A21F027000C0519 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F51E1B2A21F027000C0519 /* OnBoarding.swift */; };
+		65F51E1E2A21F2D6000C0519 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F51E1D2A21F2D6000C0519 /* UserModel.swift */; };
+		65F51E202A21F383000C0519 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F51E1F2A21F383000C0519 /* NetworkModel.swift */; };
+		65F51E232A21F3E8000C0519 /* RequestHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F51E222A21F3E8000C0519 /* RequestHandler.swift */; };
+		65F51E252A21F3FA000C0519 /* ResponseStatusCodeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F51E242A21F3FA000C0519 /* ResponseStatusCodeHandler.swift */; };
+		9AD087C956212B9A86CC7328 /* Pods_BardMessenger.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDDF976A6A9858A6B47A8279 /* Pods_BardMessenger.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		239E97D0752CD02DBCEDAB63 /* Pods-BardMessenger.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BardMessenger.release.xcconfig"; path = "Target Support Files/Pods-BardMessenger/Pods-BardMessenger.release.xcconfig"; sourceTree = "<group>"; };
 		65B497952A2104FE00E40227 /* BardMessenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BardMessenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65B497982A2104FE00E40227 /* BardMessengerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BardMessengerApp.swift; sourceTree = "<group>"; };
 		65B4979A2A2104FE00E40227 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65B4979C2A21050100E40227 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65B4979F2A21050100E40227 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		65CA46672A22141A00323B83 /* ChatMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMain.swift; sourceTree = "<group>"; };
+		65CA46692A22159D00323B83 /* ChatMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMainViewModel.swift; sourceTree = "<group>"; };
+		65F51E1B2A21F027000C0519 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		65F51E1D2A21F2D6000C0519 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		65F51E1F2A21F383000C0519 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
+		65F51E222A21F3E8000C0519 /* RequestHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestHandler.swift; sourceTree = "<group>"; };
+		65F51E242A21F3FA000C0519 /* ResponseStatusCodeHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStatusCodeHandler.swift; sourceTree = "<group>"; };
+		6D23ADFDA4CAEE4C32782A1A /* Pods-BardMessenger.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BardMessenger.debug.xcconfig"; path = "Target Support Files/Pods-BardMessenger/Pods-BardMessenger.debug.xcconfig"; sourceTree = "<group>"; };
+		CDDF976A6A9858A6B47A8279 /* Pods_BardMessenger.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BardMessenger.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,17 +44,54 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AD087C956212B9A86CC7328 /* Pods_BardMessenger.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1D66FE283BBF08993E6A7A42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CDDF976A6A9858A6B47A8279 /* Pods_BardMessenger.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		650040D82A212B7000D1EEEE /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				65CA46692A22159D00323B83 /* ChatMainViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		650040D92A212D2A00D1EEEE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				65F51E1D2A21F2D6000C0519 /* UserModel.swift */,
+				65F51E1F2A21F383000C0519 /* NetworkModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		650040DA2A212D3300D1EEEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				65F51E1B2A21F027000C0519 /* OnBoarding.swift */,
+				65CA46672A22141A00323B83 /* ChatMain.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		65B4978C2A2104FD00E40227 = {
 			isa = PBXGroup;
 			children = (
 				65B497972A2104FE00E40227 /* BardMessenger */,
 				65B497962A2104FE00E40227 /* Products */,
+				B0A7250E7E8F139DF3B28C66 /* Pods */,
+				1D66FE283BBF08993E6A7A42 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +106,10 @@
 		65B497972A2104FE00E40227 /* BardMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				65F51E212A21F3D4000C0519 /* Network */,
+				650040DA2A212D3300D1EEEE /* Views */,
+				650040D92A212D2A00D1EEEE /* Models */,
+				650040D82A212B7000D1EEEE /* ViewModels */,
 				65B497982A2104FE00E40227 /* BardMessengerApp.swift */,
 				65B4979A2A2104FE00E40227 /* ContentView.swift */,
 				65B4979C2A21050100E40227 /* Assets.xcassets */,
@@ -67,6 +126,24 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		65F51E212A21F3D4000C0519 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				65F51E222A21F3E8000C0519 /* RequestHandler.swift */,
+				65F51E242A21F3FA000C0519 /* ResponseStatusCodeHandler.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B0A7250E7E8F139DF3B28C66 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6D23ADFDA4CAEE4C32782A1A /* Pods-BardMessenger.debug.xcconfig */,
+				239E97D0752CD02DBCEDAB63 /* Pods-BardMessenger.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 65B497A32A21050100E40227 /* Build configuration list for PBXNativeTarget "BardMessenger" */;
 			buildPhases = (
+				EF290E3FE1A0613A8FF8634F /* [CP] Check Pods Manifest.lock */,
 				65B497912A2104FE00E40227 /* Sources */,
 				65B497922A2104FE00E40227 /* Frameworks */,
 				65B497932A2104FE00E40227 /* Resources */,
+				BACBC77119745F617281C317 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -103,7 +182,7 @@
 				};
 			};
 			buildConfigurationList = 65B497902A2104FD00E40227 /* Build configuration list for PBXProject "BardMessenger" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -132,12 +211,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BACBC77119745F617281C317 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BardMessenger/Pods-BardMessenger-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BardMessenger/Pods-BardMessenger-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BardMessenger/Pods-BardMessenger-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF290E3FE1A0613A8FF8634F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BardMessenger-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		65B497912A2104FE00E40227 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				65B4979B2A2104FE00E40227 /* ContentView.swift in Sources */,
+				65F51E1C2A21F027000C0519 /* OnBoarding.swift in Sources */,
+				65F51E232A21F3E8000C0519 /* RequestHandler.swift in Sources */,
+				65CA466A2A22159D00323B83 /* ChatMainViewModel.swift in Sources */,
+				65F51E252A21F3FA000C0519 /* ResponseStatusCodeHandler.swift in Sources */,
+				65F51E1E2A21F2D6000C0519 /* UserModel.swift in Sources */,
+				65F51E202A21F383000C0519 /* NetworkModel.swift in Sources */,
+				65CA46682A22141A00323B83 /* ChatMain.swift in Sources */,
 				65B497992A2104FE00E40227 /* BardMessengerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -261,6 +389,7 @@
 		};
 		65B497A42A21050100E40227 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6D23ADFDA4CAEE4C32782A1A /* Pods-BardMessenger.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -290,6 +419,7 @@
 		};
 		65B497A52A21050100E40227 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 239E97D0752CD02DBCEDAB63 /* Pods-BardMessenger.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
