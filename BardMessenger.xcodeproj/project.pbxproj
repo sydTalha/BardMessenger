@@ -13,6 +13,7 @@
 		65B497A02A21050100E40227 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65B4979F2A21050100E40227 /* Preview Assets.xcassets */; };
 		65CA46682A22141A00323B83 /* ChatMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA46672A22141A00323B83 /* ChatMain.swift */; };
 		65CA466A2A22159D00323B83 /* ChatMainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA46692A22159D00323B83 /* ChatMainViewModel.swift */; };
+		65CA466D2A22576200323B83 /* OvalTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CA466C2A22576100323B83 /* OvalTextFieldStyle.swift */; };
 		65F51E1C2A21F027000C0519 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F51E1B2A21F027000C0519 /* OnBoarding.swift */; };
 		65F51E1E2A21F2D6000C0519 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F51E1D2A21F2D6000C0519 /* UserModel.swift */; };
 		65F51E202A21F383000C0519 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65F51E1F2A21F383000C0519 /* NetworkModel.swift */; };
@@ -30,6 +31,7 @@
 		65B4979F2A21050100E40227 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		65CA46672A22141A00323B83 /* ChatMain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMain.swift; sourceTree = "<group>"; };
 		65CA46692A22159D00323B83 /* ChatMainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMainViewModel.swift; sourceTree = "<group>"; };
+		65CA466C2A22576100323B83 /* OvalTextFieldStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvalTextFieldStyle.swift; sourceTree = "<group>"; };
 		65F51E1B2A21F027000C0519 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 		65F51E1D2A21F2D6000C0519 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 		65F51E1F2A21F383000C0519 /* NetworkModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		65B497972A2104FE00E40227 /* BardMessenger */ = {
 			isa = PBXGroup;
 			children = (
+				65CA466B2A22574B00323B83 /* Custom */,
 				65F51E212A21F3D4000C0519 /* Network */,
 				650040DA2A212D3300D1EEEE /* Views */,
 				650040D92A212D2A00D1EEEE /* Models */,
@@ -124,6 +127,14 @@
 				65B4979F2A21050100E40227 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		65CA466B2A22574B00323B83 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				65CA466C2A22576100323B83 /* OvalTextFieldStyle.swift */,
+			);
+			path = Custom;
 			sourceTree = "<group>";
 		};
 		65F51E212A21F3D4000C0519 /* Network */ = {
@@ -261,6 +272,7 @@
 				65B4979B2A2104FE00E40227 /* ContentView.swift in Sources */,
 				65F51E1C2A21F027000C0519 /* OnBoarding.swift in Sources */,
 				65F51E232A21F3E8000C0519 /* RequestHandler.swift in Sources */,
+				65CA466D2A22576200323B83 /* OvalTextFieldStyle.swift in Sources */,
 				65CA466A2A22159D00323B83 /* ChatMainViewModel.swift in Sources */,
 				65F51E252A21F3FA000C0519 /* ResponseStatusCodeHandler.swift in Sources */,
 				65F51E1E2A21F2D6000C0519 /* UserModel.swift in Sources */,
