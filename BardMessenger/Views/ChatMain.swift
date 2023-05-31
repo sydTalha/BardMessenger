@@ -28,45 +28,7 @@ struct ChatMain: View {
     
     var body: some View {
         VStack{
-            
-
-
-
-            Spacer()
-            HStack{
-                TextField("Hello ChatGPT", text: $msg)
-                    .overlay(alignment: .trailing) {
-                        Button {
-                            print("voice record")
-                        } label: {
-                            Image(systemName: "mic")
-                                .resizable()
-                                .foregroundColor(.gray)
-                                .frame(width: 18, height: 25)
-                                .padding()
-                        }
-
-                    }
-                    .textFieldStyle(OvalTextFieldStyle())
-                    .padding()
-
-                Button {
-                    print("send tapped")
-                } label: {
-                    Image(systemName: "paperplane")
-                        .resizable()
-                        .frame(width: 20, height: 20)
-                        .foregroundColor(.white)
-                        .padding(20)
-                        .background(Color.blue)
-                        .clipShape(Circle())
-                }
-                .padding(.trailing)
-
-
-
-            }
-
+            Chat()
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarTitleDisplayMode(.inline)
