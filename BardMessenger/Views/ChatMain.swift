@@ -7,11 +7,13 @@
 
 import SwiftUI
 
+
 struct ChatMain: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
 
     @State var msg: String = ""
+    
     
     var btnBack: some View{
         Button {
@@ -26,9 +28,13 @@ struct ChatMain: View {
     
     var body: some View {
         VStack{
+            
+
+
+
             Spacer()
             HStack{
-                TextField("Hello Bard", text: $msg)
+                TextField("Hello ChatGPT", text: $msg)
                     .overlay(alignment: .trailing) {
                         Button {
                             print("voice record")
@@ -43,21 +49,24 @@ struct ChatMain: View {
                     }
                     .textFieldStyle(OvalTextFieldStyle())
                     .padding()
-                
+
                 Button {
                     print("send tapped")
                 } label: {
                     Image(systemName: "paperplane")
-                        
+                        .resizable()
+                        .frame(width: 20, height: 20)
+                        .foregroundColor(.white)
+                        .padding(20)
+                        .background(Color.blue)
+                        .clipShape(Circle())
                 }
-                .foregroundColor(.blue)
-                .clipShape(Circle())
-                .padding()
-                
+                .padding(.trailing)
 
-                    
+
+
             }
-            
+
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarTitleDisplayMode(.inline)
@@ -65,16 +74,16 @@ struct ChatMain: View {
         .toolbar {
             ToolbarItem(placement: .principal) {
                 VStack{
-                    Text("Bard AI")
+                    Text("Chat GPT")
                         .fontWeight(.medium)
                         .ignoresSafeArea()
-                        
+
                     HStack{
                         Image(systemName: "circle.fill")
                             .resizable()
                             .foregroundColor(.green)
                             .frame(width: 8, height: 8)
-                        
+
                         Text("Online")
                             .font(.system(size: 14))
                             .fontWeight(.light)
